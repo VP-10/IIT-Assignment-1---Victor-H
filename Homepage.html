@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A1 - Intro to Information Technology</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Welcome</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="Homepage.html">Home</a></li>
+											<li><a href="Why IT.html">Why IT?</a></li>
+											<li><a href="Ideal Job.html">My Ideal Job</a></li>
+											<li><a href="Personal Profile.html">Personal Profile</a></li>
+											<li><a href="Project Idea.html">Project Idea</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Welcome to my A1 Submission</h2>
+							<ul class="actions special">
+							<!--	<li><a href="#" class="button primary">Activate</a></li> -->
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn About Me</a>
+					</section>
+
+				<!-- Section One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Personal Information</h2>
+								<p>Hey there, my name is Victor Heather and a student at RMIT studying a Bachelor of IT. Residing in Melbourne currently, I was born in Sydney and lived in Brisbane as well. Likewise, my parents both are from overseas, giving me a huge cultural background of Filipino, Spanish, American, New Zealander and Cook Islander but can’t really speak much of the national languages! Definitely a cultured person! </p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-heart major style2"><span class="label">Enjoy</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Your</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Day</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Section Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><figure><img src="images/Homepage/me.jpg" alt="Photo of Me"/><figcaption>Victor P Heather <br> STUDENT NUMBER : S3791347 <br> EMAIL: s3791347@student.rmit.edu.au</figure></div><div class="content">
+								<p>This is my first year at RMIT, but I have studied the same course at Monash University back in 2019.
+									After the whole COVID break, thought it was time for a switch and applied for here!
+									Here is a “interesting” picture of me with a couple of university details!
+								</p>
+							</div>
+						</section>
+						<section id="one" class="wrapper style1 special">
+							<div>
+								<p>Over the last couple of years, I’ve enjoyed doing karate as a student and instructor. </br>
+									 I’ve had many great memories and adventures, competing all over Australia, and the UK! </br>
+									 Here is a quick snapshot of my journey!</p>
+							</div>
+
+							<!-- Image Slider -->
+							<div id="image-container">
+									<img class="slider" src="images/Homepage/karate1.png" alt="Pic 1"/>
+									<img class="slider" src="images/Homepage/karate2.jpg" alt="Pic 2"/>
+									<img class="slider" src="images/Homepage/karate3.png" alt="Pic 3"/>
+									<img class="slider" src="images/Homepage/karate4.png" alt="Pic 4"/>
+									<img class="slider" src="images/Homepage/karate5.png" alt="Pic 5"/>
+									<img class="slider" src="images/Homepage/karate6.jpg" alt="Pic 6"/>
+									<img class="slider" src="images/Homepage/karate7.jpg" alt="Pic 7"/>
+
+									<button class="imagebuttonleft" onclick="plusDivs(-1)">&#10094;</button>
+  								<button class="imagebuttonright" onclick="plusDivs(1)">&#10095;</button>
+							</div>
+						</section>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><i class="fab fa-snapchat"></i></li>
+							<li><i class="fab fa-instagram"></i></li>
+							<li><i class="fab fa-github"></i></li>
+						</ul>
+
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+			<!-- Scroll to Top Button -->
+			<a class="returntotop" href="#"><i class="fas fa-arrow-up"></i></a>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- My Scripts -->
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("slider");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";
+				  }
+				  x[slideIndex-1].style.display = "block";
+				}
+			</script>
+
+	</body>
+</html>
